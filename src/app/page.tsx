@@ -8,12 +8,15 @@ import React from "react";
 const page = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-[#FBFCFD] ">
+      {/* <Navbar /> */}
       <Navbar />
       <Hero />
       <BuilderList />
       <RelatedList />
-      wiewevn
       <Footer />
+      {/* <BuilderList />
+      <RelatedList />
+      <Footer /> */}
     </div>
   );
 };

@@ -57,12 +57,12 @@ const Hero = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
   return (
-    <div className="flex flex-col w-[1024px] py-6 ">
-      <span className=" text-5xl text-[#2C384A] text-left ">
+    <div className="flex flex-col w-full md:w-[768px] xl:w-[1024px] py-6  ">
+      <span className=" text-4xl sm:text-5xl text-[#2C384A] text-left ">
         Best Website builders in the US
       </span>
       <div className=" bg-[#E1E4E6] w-full h-[1.4px] my-3 "></div>
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-4 mx-2 sm:mx-0 ">
         <div>
           <div className="flex items-center justify-center gap-3 text-[#4B5665] ">
             <GoCheckCircle />
@@ -72,7 +72,6 @@ const Hero = () => {
             <TfiInfoAlt />
             <span className=" text-sm ">Advertising Disclosure</span>
           </div>
-          <div></div>
         </div>
         <div>
           <Popover open={open} onOpenChange={setOpen}>
@@ -119,22 +118,22 @@ const Hero = () => {
           </Popover>
         </div>
       </div>
-      <div className=" bg-[#E1E4E6] w-full h-[1.5px] my-3 "></div>
-      <div className="w-full flex items-center justify-start gap-12">
+      <div className=" bg-[#E1E4E6] w-full h-[1.5px] my-6 sm:my-3 "></div>
+      <div className="w-full flex flex-wrap items-center justify-start gap-4 sm:gap-5 xl:gap-12 mx-auto ">
         {filter_two.map((item, i) => (
           <div
             key={i}
-            className="hover:bg-gray-200/80 px-4 py-1 flex items-center justify-center  rounded-md cursor-pointer "
+            className="bg-gray-200/40 hover:bg-gray-200 px-4 py-1 flex items-center justify-center  rounded-md cursor-pointer  mx-1 sm:mx-0"
           >
             {item.value}
           </div>
         ))}
       </div>
-      <div className="w-full flex  ">
+      <div className="w-full flex flex-wrap ">
         {filter_three.map((item, i) => (
-          <div className="flex items-center justify-center gap-3 text-[#727D87]  py-3 hover:underline cursor-pointer ">
+          <div className="flex flex-wrap items-center justify-center sm:gap-3 text-[#727D87] py-4 hover:underline cursor-pointer ">
             {i < 4 ? (
-              <div className="flex items-center justify-center gap-3  ">
+              <div className="flex items-center justify-center sm:gap-3 mx-1 sm:mx-0  ">
                 <div className="text-sm hover:text-gray-900 ">{item.value}</div>
                 <HiChevronRight />
               </div>

@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <div className="w-full flex items-center justify-center gap-8 bg-[#212731] mx-auto h-16 ">
       <div className="w-64 h-9 bg-white flex items-center justify-center gap-1 border-[1px] rounded-lg pl-2 ">
-        <div className=" text-2xl ">
+        <div className=" text-xl sm:text-2xl ">
           <PiMagnifyingGlassLight />
         </div>
         <input

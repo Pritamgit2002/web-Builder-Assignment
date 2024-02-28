@@ -59,8 +59,8 @@ const Footer = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");
   return (
-    <div className="w-full h-[452px] flex items-center justify-center gap-x-28 bg-[#212731] mx-auto  ">
-      <div className="w-max py-6 flex items-start justify-center gap-x-40 -translate-y-8 ">
+    <div className="w-full h-max xl:h-[452px] flex items-start xl:items-center justify-center gap-x-12 sm:gap-x-32 bg-[#212731] mx-auto pt-10 xl:pt-0 ">
+      <div className="w-max py-6 flex flex-col-reverse xl:flex-row items-start justify-center gap-y-16 gap-x-40 -translate-y-8 ">
         <div className="h-full flex flex-col items-start justify-center text-left gap-y-6 w-max ">
           <span className="text-white text-lg ">Categories</span>
           <div className=" flex flex-col gap-y-5 ">
@@ -75,7 +75,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-full flex flex-col items-start justify-center text-left gap-y-6 w-max  ">
-          <span className="text-white text-lg ">Categories</span>
+          <span className="text-white text-lg ">Contacts</span>
           <div className=" flex flex-col gap-y-5 ">
             {contact.map((item, i) => (
               <Link
@@ -88,14 +88,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="-translate-y-16">
+      <div className="xl:-translate-y-20">
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
             <Button
               variant="outline"
               role="combobox"
               aria-expanded={open}
-              className="w-[160px] justify-between border-none bg-transparent text-white "
+              className=" w-[120px] sm:w-[160px] justify-between border-none bg-transparent text-white "
             >
               {value
                 ? filter_one.find((framework) => framework.value === value)
@@ -104,7 +104,7 @@ const Footer = () => {
               <FaChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
             </Button>
           </PopoverTrigger>
-          <PopoverContent className="w-[160px] p-0 ">
+          <PopoverContent className="w-[120px] sm:w-[160px] p-0 ">
             <Command>
               <CommandGroup>
                 {filter_one.map((framework) => (
