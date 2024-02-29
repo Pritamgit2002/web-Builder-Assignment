@@ -2,9 +2,9 @@ import Link from "next/link";
 import { PiMagnifyingGlassLight } from "react-icons/pi";
 
 const navLinks = [
-  { title: "Categories", link: "/categories" },
-  { title: "Website Builders", link: "/websiteBuilders" },
-  { title: "Today's Deals", link: "/today'sDeals" },
+  { title: "Categories", link: "" },
+  { title: "Website Builders", link: "" },
+  { title: "Today's Deals", link: "" },
 ];
 export default function Navbar() {
   return (
