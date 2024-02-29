@@ -40,21 +40,6 @@ const filter_one = [
   { value: "french", label: "French" },
 ];
 
-// const filter_one = [
-//   {
-//     value: "relevant",
-//     label: "Top Relevant",
-//   },
-//   {
-//     value: "searched",
-//     label: "Top Searched",
-//   },
-//   {
-//     value: "liked",
-//     label: "Top Liked",
-//   },
-// ];
-
 const Footer = () => {
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState("");

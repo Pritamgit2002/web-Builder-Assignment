@@ -1,3 +1,4 @@
+import BlueButton from "@/components/ui/blueButton";
 import Image from "next/image";
 import React from "react";
 
@@ -29,9 +30,8 @@ const RelatedCard = () => {
           <span className=" text-sm text-[#9FA9B3] ">$49.96</span>
           <span className="text-sm text-[#EF4C5D] ">(20% Off)</span>
         </div>
-        <div className=" w-72 py-3 bg-[#1B88F4] hover:bg-[#1B88F4]/80 rounded-lg text-center text-white cursor-pointer mx-auto ">
-          View Deal
-        </div>
+
+        <BlueButton btn_text="View Deal" />
       </div>
     </div>
   );

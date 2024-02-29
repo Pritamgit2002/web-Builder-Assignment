@@ -1,51 +1,15 @@
 "use client";
+import BlueButton from "@/components/ui/blueButton";
 import Image from "next/image";
 import React, { useState } from "react";
 import { BsTrophy } from "react-icons/bs";
-import { FaCheck } from "react-icons/fa";
 import {
   IoIosArrowDown,
   IoIosArrowUp,
   IoIosStarHalf,
   IoIosStarOutline,
 } from "react-icons/io";
-import { IoCheckmarkCircle, IoCheckmarkOutline, IoStar } from "react-icons/io5";
-
-// const content = [
-//   {
-//     heading: "WixPro 72-Inch Responsive Website Builder - ",
-//     desc: "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-//     highlight1:
-//       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-//     highlight2:
-//       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-//     rating: "9.8",
-//     pack: "Exceptional",
-//     star: "",
-//   },
-//   {
-//     heading: "SiteCraft 68-Inch Ultimate Web Design Studio - ",
-//     desc: "Advanced Site Creation Toolkit, Intuitive Drag-and-Drop Editor for Dynamic Websites and E-commerce Platforms (Green/White)",
-//     highlight1:
-//       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-//     highlight2:
-//       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-//     rating: "9.5",
-//     pack: "Excellent",
-//     star: "",
-//   },
-//   {
-//     heading: "WixPro 72-Inch Responsive Website Builder - ",
-//     desc: "Comprehensive Digital Platform Creation Tool, Streamlined Design Interface for Professional Websites and Online Stores (Black/Blue)",
-//     highlight1:
-//       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-//     highlight2:
-//       "[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations.",
-//     rating: "9.3",
-//     pack: "Exceptional",
-//     star: "",
-//   },
-// ];
+import { IoCheckmarkOutline, IoDiamondOutline, IoStar } from "react-icons/io5";
 
 const BuilderListCard = ({
   id,
@@ -70,7 +34,7 @@ const BuilderListCard = ({
           {promo && (
             <>
               <div className="w-max rounded-r-lg flex items-center justify-center gap-2 text-white bg-[#FF7724] px-2 py-1 ">
-                <BsTrophy />
+                {promo == "Best Choice" ? <BsTrophy /> : <IoDiamondOutline />}
                 <span className=" text-base ">{promo}</span>
               </div>
             </>
@@ -193,9 +157,8 @@ const BuilderListCard = ({
                 ))}
               </span>
             </div>
-            <div className=" w-56 py-3 bg-[#1B88F4] hover:bg-[#1B88F4]/80 rounded-lg text-center text-white cursor-pointer ">
-              View
-            </div>
+
+            <BlueButton btn_text="View" />
           </div>
         </div>
       </div>

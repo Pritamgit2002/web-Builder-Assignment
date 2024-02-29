@@ -1,9 +1,4 @@
-"use client";
-import Image from "next/image";
 import React, { useState } from "react";
-import { BsTrophy } from "react-icons/bs";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { IoStar } from "react-icons/io5";
 import BuilderListCard from "../Cards/BuilderListCard/BuilderListCard";
 const content = [
   {
