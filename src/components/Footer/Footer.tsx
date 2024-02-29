@@ -52,7 +52,7 @@ const Footer = () => {
             {category.map((item, i) => (
               <Link
                 href={item.link}
-                className="text-sm text-[#B6BDC4] hover:underline "
+                className="text-sm text-[#B6BDC4] hover:text-white hover:underline "
               >
                 {item.title}
               </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
             {contact.map((item, i) => (
               <Link
                 href={item.link}
-                className="text-sm text-[#B6BDC4] hover:underline "
+                className="text-sm text-[#B6BDC4] hover:text-white hover:underline "
               >
                 {item.title}
               </Link>
