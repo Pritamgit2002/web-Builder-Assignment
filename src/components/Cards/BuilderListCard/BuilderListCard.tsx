@@ -28,7 +28,7 @@ const BuilderListCard = ({
 }: any) => {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className=" flex flex-col w-full md:w-[768px] xl:w-[1024px] bg-white h-max rounded-xl  ">
+    <div className=" flex flex-col w-80 md:w-[768px] xl:w-[1024px]  h-max rounded-xl ">
       <div className="relative">
         <div className="absolute flex flex-col items-start justify-start gap-y-4 ">
           {promo && (
@@ -50,7 +50,7 @@ const BuilderListCard = ({
               alt="image"
               width={2000}
               height={2000}
-              className=" aspect-square object-contain "
+              className="  aspect-square object-contain "
             />
             <span>{image_name}</span>
           </div>
@@ -79,8 +79,8 @@ const BuilderListCard = ({
                 </div>
               )}
               {id == 4 && (
-                <div className="">
-                  <div className=" bg-[#FFF4ED] p-2 rounded-lg ml-4 mt-2 pl-3 flex flex-col justify-start items-start gap-y-1 w-80  xl:w-[500px]  ">
+                <div className="pl-2">
+                  <div className=" bg-[#FFF4ED] p-2 rounded-lg ml-4 mt-2 flex flex-col justify-start items-start gap-y-1 w-80  xl:w-[500px]  ">
                     <div className="flex items-center justify-start gap-2 ">
                       <span className="bg-white text-sm  text-[#1B88F4] rounded-lg py-[1.2px] px-1 text-center ">
                         9.9

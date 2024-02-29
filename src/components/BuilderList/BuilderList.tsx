@@ -63,7 +63,7 @@ const content = [
 
 const BuilderList = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-10">
+    <div className="flex flex-col items-center justify-center  gap-y-10">
       {content.map((item, i) => (
         <div key={i}>
           <BuilderListCard
