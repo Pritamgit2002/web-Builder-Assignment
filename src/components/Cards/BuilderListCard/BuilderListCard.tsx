@@ -171,7 +171,10 @@ const BuilderListCard = ({
               {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
             </button>
           </div>
-          <div className="flex flex-row sm:flex-col items-end sm:items-center justify-between sm:justify-center  sm:gap-y-36 h-full w-full  ">
+          <div
+            className="flex flex-row sm:flex-col items-end sm:items-center justify-between sm:justify-center  sm:gap-y-36 h-full w-full  px-3 sm:px-0
+            "
+          >
             <div className="flex flex-col items-center justify-center gap-y-4 w-32 h-32 bg-[#F3F9FF] text-[#074786] rounded-lg sm:rounded-b-lg ">
               <div>
                 <span className=" text-3xl ">{rating}</span>

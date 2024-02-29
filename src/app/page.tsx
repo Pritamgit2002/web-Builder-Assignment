@@ -14,9 +14,6 @@ const page = () => {
       <BuilderList />
       <RelatedList />
       <Footer />
-      {/* <BuilderList />
-      <RelatedList />
-      <Footer /> */}
     </div>
   );
 };
